@@ -1,3 +1,8 @@
 "use molokai as the default color scheme
 colorscheme molokai
 set nobackup
+
+set expandtab "replace tab into spaces
+set tabstop=4 "tab width 
+set shiftwidth=4 " indent operation
+set autoindent
