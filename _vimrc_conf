@@ -1,4 +1,22 @@
-"use molokai as the default color scheme
+" Set vundle
+set nocompatible
+filetype off
+
+set rtp+=~/.vim/bundle/vundle/
+call vundle#rc()
+
+" Let Vundle manage Vundle
+" required!
+Bundle 'gmarik/vundle'
+
+" Install bundles you want
+Bundle 'scrooloose/nerdtree'
+Bundle 'klen/python-mode'
+
+filetype plugin indent on
+
+
+" use molokai as the default color scheme
 colorscheme molokai
 set nobackup
 
