@@ -12,6 +12,9 @@ Bundle 'gmarik/vundle'
 " Install bundles you want
 Bundle 'scrooloose/nerdtree'
 Bundle 'klen/python-mode'
+Bundle 'StanAngeloff/php.vim'
+Bundle 'taglist.vim'
+Bundle 'phpcomplete.vim'
 
 filetype plugin indent on
 
@@ -23,4 +26,7 @@ set expandtab "replace tab into spaces
 set tabstop=4 "tab width 
 set shiftwidth=4 " indent operation
 set autoindent
+
+" Set shortcuts to NERDTree
+map <C-n> :NERDTreeToggle<CR>
 
