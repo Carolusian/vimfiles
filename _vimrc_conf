@@ -13,7 +13,6 @@ Bundle 'gmarik/vundle'
 Bundle 'scrooloose/nerdtree'
 Bundle 'klen/python-mode'
 Bundle 'StanAngeloff/php.vim'
-Bundle 'taglist.vim'
 Bundle 'phpcomplete.vim'
 Bundle 'mileszs/ack.vim'
 Bundle 'JulesWang/css.vim'
@@ -21,6 +20,9 @@ Bundle 'L9'
 Bundle 'FuzzyFinder'
 Bundle 'Lokaltog/powerline', {'rtp':'powerline/bindings/vim/'}
 Bundle 'tpope/vim-surround'
+Bundle 'Lokaltog/vim-easymotion'
+Bundle 'scrooloose/syntastic'
+Bundle 'phtml.vim'
 
 filetype plugin indent on
 
@@ -38,7 +40,10 @@ set autoindent
 map <C-n> :NERDTreeToggle<CR>
 
 " Set shortcuts to FuzzyFinder
-nnoremap <Leader>f :FufFile */<CR>
+nnoremap <Leader>f :FufFile <CR>
 
 " Powerline setup
 set laststatus=2
+
+" Set ctags
+set tags=./tags;/
