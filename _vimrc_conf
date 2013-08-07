@@ -2,8 +2,8 @@
 set nocompatible
 filetype off
 
-set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
+set rtp+=$VIM/vimfiles/bundle/vundle/
+call vundle#rc('$VIM/vimfiles/bundle/')
 
 " Let Vundle manage Vundle
 " required!
@@ -23,12 +23,18 @@ Bundle 'tpope/vim-surround'
 Bundle 'Lokaltog/vim-easymotion'
 Bundle 'scrooloose/syntastic'
 Bundle 'phtml.vim'
+Bundle 'tomtom/tcomment_vim'
+Bundle 'tristen/vim-sparkup'
+Bundle 'kchmck/vim-coffee-script'
+Bundle 'joonty/vdebug.git'
 
 filetype plugin indent on
 
+" ~ files is anonying
+set nobackup
 
 " use molokai as the default color scheme
-colorscheme molokai
+colorscheme candy
 
 set number "Display line number
 set expandtab "replace tab into spaces
@@ -41,6 +47,10 @@ map <C-n> :NERDTreeToggle<CR>
 
 " Set shortcuts to FuzzyFinder
 nnoremap <Leader>f :FufFile <CR>
+
+" Set encoding
+let &termencoding=&encoding 
+set fileencodings=utf-8,gbk,ucs-bom,cp936
 
 " Powerline setup
 set laststatus=2
