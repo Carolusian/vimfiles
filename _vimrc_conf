@@ -70,3 +70,6 @@ let g:pymode_lint_checker="pyflakes"
 
 " Shortcut for jedi completion
 let g:pymode_rope = 0
+
+" Enable sparkup for django templates
+au FileType htmldjango runtime! ftplugin/html/sparkup.vim
