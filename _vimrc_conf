@@ -28,7 +28,7 @@ Bundle 'tomtom/tcomment_vim'
 Bundle 'tristen/vim-sparkup'
 Bundle 'kchmck/vim-coffee-script'
 Bundle 'joonty/vdebug.git'
-Bundle 'ervandew/supertab'
+" Bundle 'ervandew/supertab'
 Bundle 'davidhalter/jedi-vim'
 Bundle 'django.vim'
 
@@ -73,3 +73,6 @@ let g:pymode_rope = 0
 
 " Enable sparkup for django templates
 au FileType htmldjango runtime! ftplugin/html/sparkup.vim
+
+" jedi autocomplete command
+let g:jedi#autocompletion_command = "<C-b>"
