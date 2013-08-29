@@ -32,7 +32,7 @@ Bundle 'tristen/vim-sparkup'
 Bundle 'kchmck/vim-coffee-script'
 Bundle 'brookhong/DBGPavim'
 " Bundle 'ervandew/supertab'
-Bundle 'davidhalter/jedi-vim'
+" Bundle 'davidhalter/jedi-vim'
 Bundle 'django.vim'
 
 filetype plugin indent on
@@ -75,11 +75,10 @@ set tags=./tags;/
 " Set python lint checker to pyflakes
 let g:pymode_lint_checker="pyflakes"
 
-" Shortcut for jedi completion
-let g:pymode_rope = 0
+let g:pymode_rope = 1
 
 " Enable sparkup for django templates
 au FileType htmldjango runtime! ftplugin/html/sparkup.vim
 
 " jedi autocomplete command
-let g:jedi#autocompletions_command = "<C-b>"
+" let g:jedi#autocompletions_command = "<C-b>"
