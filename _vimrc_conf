@@ -11,6 +11,7 @@ Bundle 'gmarik/vundle'
 
 " Install bundles you want
 Bundle 'scrooloose/nerdtree'
+Bundle 'netrw.vim'
 Bundle 'klen/python-mode'
 Bundle 'StanAngeloff/php.vim'
 Bundle 'phpcomplete.vim'
@@ -26,7 +27,7 @@ Bundle 'phtml.vim'
 Bundle 'tomtom/tcomment_vim'
 Bundle 'tristen/vim-sparkup'
 Bundle 'kchmck/vim-coffee-script'
-Bundle 'joonty/vdebug.git'
+Bundle 'brookhong/DBGPavim'
 
 filetype plugin indent on
 
@@ -41,6 +42,10 @@ set expandtab "replace tab into spaces
 set tabstop=4 "tab width 
 set shiftwidth=4 " indent operation
 set autoindent
+
+" Set tabwith for coffeescript files and html files
+autocmd FileType coffee setlocal shiftwidth=2 tabstop=2
+autocmd FileType html setlocal shiftwidth=2 tabstop=2
 
 " Set shortcuts to NERDTree
 map <C-n> :NERDTreeToggle<CR>
