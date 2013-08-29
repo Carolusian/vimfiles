@@ -5,6 +5,8 @@ filetype off
 set rtp+=$VIM/vimfiles/bundle/vundle/
 call vundle#rc('$VIM/vimfiles/bundle/')
 
+
+
 " Let Vundle manage Vundle
 " required!
 Bundle 'gmarik/vundle'
@@ -22,12 +24,16 @@ Bundle 'FuzzyFinder'
 Bundle 'Lokaltog/powerline', {'rtp':'powerline/bindings/vim/'}
 Bundle 'tpope/vim-surround'
 Bundle 'Lokaltog/vim-easymotion'
+Bundle 'msanders/snipmate.vim'
 Bundle 'scrooloose/syntastic'
 Bundle 'phtml.vim'
 Bundle 'tomtom/tcomment_vim'
 Bundle 'tristen/vim-sparkup'
 Bundle 'kchmck/vim-coffee-script'
 Bundle 'brookhong/DBGPavim'
+" Bundle 'ervandew/supertab'
+Bundle 'davidhalter/jedi-vim'
+Bundle 'django.vim'
 
 filetype plugin indent on
 
@@ -35,7 +41,8 @@ filetype plugin indent on
 set nobackup
 
 " use molokai as the default color scheme
-colorscheme candy
+" colorscheme candy
+colorscheme molokai
 
 set number "Display line number
 set expandtab "replace tab into spaces
@@ -49,6 +56,8 @@ autocmd FileType html setlocal shiftwidth=2 tabstop=2
 
 " Set shortcuts to NERDTree
 map <C-n> :NERDTreeToggle<CR>
+" ignore .pyc files in NERDTree
+let NERDTreeIgnore = ['\.pyc$']
 
 " Set shortcuts to FuzzyFinder
 nnoremap <Leader>f :FufFile <CR>
@@ -62,3 +71,15 @@ set laststatus=2
 
 " Set ctags
 set tags=./tags;/
+
+" Set python lint checker to pyflakes
+let g:pymode_lint_checker="pyflakes"
+
+" Shortcut for jedi completion
+let g:pymode_rope = 0
+
+" Enable sparkup for django templates
+au FileType htmldjango runtime! ftplugin/html/sparkup.vim
+
+" jedi autocomplete command
+let g:jedi#autocompletions_command = "<C-b>"
