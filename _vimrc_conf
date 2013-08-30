@@ -83,5 +83,8 @@ let g:pymode_folding = 0
 " Enable sparkup for django templates
 au FileType htmldjango runtime! ftplugin/html/sparkup.vim
 
+" File format should always be unix
+set fileformat = unix
+
 " jedi autocomplete command
 " let g:jedi#autocompletions_command = "<C-b>"
