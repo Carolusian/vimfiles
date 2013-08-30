@@ -77,6 +77,9 @@ let g:pymode_lint_checker="pyflakes"
 
 let g:pymode_rope = 1
 
+"disable pymode_fold
+let g:pymode_folding = 0
+
 " Enable sparkup for django templates
 au FileType htmldjango runtime! ftplugin/html/sparkup.vim
 
