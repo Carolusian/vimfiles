@@ -213,3 +213,6 @@ pip-log.txt
 
 #Mr Developer
 .mr.developer.cfg
+
+#Vim Plugins in Bundle should be ignored, because they are managed by Vundle
+bundle/ 
