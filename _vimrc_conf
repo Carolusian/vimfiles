@@ -14,6 +14,7 @@ Bundle 'gmarik/vundle'
 " Install bundles you want
 Bundle 'scrooloose/nerdtree'
 Bundle 'netrw.vim'
+Bundle 'taglist.vim'
 Bundle 'klen/python-mode'
 Bundle 'StanAngeloff/php.vim'
 Bundle 'phpcomplete.vim'
@@ -35,6 +36,10 @@ Bundle 'brookhong/DBGPavim'
 Bundle 'davidhalter/jedi-vim'
 Bundle 'django.vim'
 Bundle 'jistr/vim-nerdtree-tabs'
+
+"Dependency plugin for easytags
+Bundle 'xolox/vim-misc' 
+Bundle 'xolox/vim-easytags'
 
 filetype plugin indent on
 
@@ -93,3 +98,9 @@ set fileformat=unix
 
 " jedi autocomplete command
 " let g:jedi#autocompletions_command = "<C-b>"
+
+" Use horizontal window for taglist
+let Tlist_Use_Horiz_Window = 1 
+
+" Automatically create project specific tags based on the first name in the 'tags' option
+" let g:easytags_dynamic_files = 2
