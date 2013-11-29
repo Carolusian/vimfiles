@@ -64,8 +64,12 @@ let NERDTreeIgnore = ['\.pyc$']
 nnoremap <Leader>f :FufFile <CR>
 
 " Set encoding
-let &termencoding=&encoding 
-set fileencodings=utf-8,gbk,ucs-bom,cp936
+
+if &termencoding == ""
+let &termencoding = &encoding
+endif
+set encoding=utf-8
+setglobal fileencoding=utf-8
 
 " Powerline setup
 set laststatus=2
