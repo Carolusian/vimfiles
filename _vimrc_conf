@@ -85,6 +85,7 @@ set tags=./tags;/
 
 " Set python lint checker to pyflakes
 let g:pymode_lint_checker="pyflakes"
+let g:syntastic_python_checkers = ['pyflakes']
 
 let g:pymode_rope = 0
 
