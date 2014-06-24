@@ -36,6 +36,7 @@ Bundle 'brookhong/DBGPavim'
 Bundle 'davidhalter/jedi-vim'
 Bundle 'django.vim'
 Bundle 'jistr/vim-nerdtree-tabs'
+Bundle 'groenewege/vim-less'
 
 "Dependency plugin for easytags
 Bundle 'xolox/vim-misc' 
@@ -104,3 +105,8 @@ let Tlist_Use_Horiz_Window = 1
 
 " Automatically create project specific tags based on the first name in the 'tags' option
 " let g:easytags_dynamic_files = 2
+
+" Set font
+if has('gui_running')
+  set guifont=Inconsolata:h12
+endif
