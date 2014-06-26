@@ -120,3 +120,8 @@ let Tlist_Use_Horiz_Window = 1
 if has('gui_running')
   set guifont=Inconsolata:h12
 endif
+
+" Probably usage of ctags
+" set tags=./yii-tags, tags
+" -f ../../www/yii-tags -h ".php" -R --exclude="\.svn\" --totals=yes --tag-relative=yes --PHP-kinds=+cf
+  
