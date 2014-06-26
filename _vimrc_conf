@@ -21,7 +21,11 @@ Bundle 'phpcomplete.vim'
 Bundle 'mileszs/ack.vim'
 Bundle 'JulesWang/css.vim'
 Bundle 'L9'
+
+"Fuzzy Finding plugins
 Bundle 'FuzzyFinder'
+Bundle 'kien/ctrlp.vim' 
+
 Bundle 'Lokaltog/powerline', {'rtp':'powerline/bindings/vim/'}
 Bundle 'tpope/vim-surround'
 Bundle 'Lokaltog/vim-easymotion'
