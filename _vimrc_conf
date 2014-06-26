@@ -14,7 +14,11 @@ Bundle 'gmarik/vundle'
 " Install bundles you want
 Bundle 'scrooloose/nerdtree'
 Bundle 'netrw.vim'
-Bundle 'taglist.vim'
+
+" Replace taglist with tagbar
+" Bundle 'taglist.vim'
+Bundle 'tagbar'
+
 Bundle 'klen/python-mode'
 Bundle 'StanAngeloff/php.vim'
 Bundle 'phpcomplete.vim'
