@@ -119,6 +119,7 @@ let Tlist_Use_Horiz_Window = 1
 " Set font
 if has('gui_running')
   set guifont=Inconsolata:h12
+  set gfw=KaiTi:h11 
 endif
 
 " Windows unreadable code problem
