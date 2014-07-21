@@ -47,9 +47,12 @@ Bundle 'jistr/vim-nerdtree-tabs'
 Bundle 'groenewege/vim-less'
 Bundle 'mattn/emmet-vim'
 
-"Dependency plugin for easytags
+" Dependency plugin for easytags
 Bundle 'xolox/vim-misc' 
 Bundle 'xolox/vim-easytags'
+
+" For scala
+Bundle 'derekwyatt/vim-scala'
 
 filetype plugin indent on
 
@@ -127,6 +130,7 @@ source $VIMRUNTIME/delmenu.vim
 source $VIMRUNTIME/menu.vim
 
 " Probably usage of ctags
-" set tags=./yii-tags, tags
+" set tags+=~/yii-tags 
+" See: http://andrewradev.com/2011/06/08/vim-and-ctags/
 " -f ../../www/yii-tags -h ".php" -R --exclude="\.svn\" --totals=yes --tag-relative=yes --PHP-kinds=+cf
   
