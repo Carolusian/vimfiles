@@ -41,7 +41,10 @@ Bundle 'tomtom/tcomment_vim'
 Bundle 'kchmck/vim-coffee-script'
 Bundle 'brookhong/DBGPavim'
 " Bundle 'ervandew/supertab'
+
 Bundle 'davidhalter/jedi-vim'
+" Bundle 'Valloric/YouCompleteMe'
+
 Bundle 'django.vim'
 Bundle 'jistr/vim-nerdtree-tabs'
 Bundle 'groenewege/vim-less'
