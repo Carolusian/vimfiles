@@ -2,62 +2,63 @@
 set nocompatible
 filetype off
 
-set rtp+=$VIM/vimfiles/bundle/vundle/
-call vundle#rc('$VIM/vimfiles/bundle/')
-
+set rtp+=$HOME/.vim/bundle/Vundle.vim
+call vundle#begin()
 
 
 " Let Vundle manage Vundle
 " required!
-Bundle 'gmarik/vundle'
+Plugin 'VundleVim/Vundle.vim'
 
 " Install bundles you want
-Bundle 'scrooloose/nerdtree'
-Bundle 'netrw.vim'
+Plugin 'scrooloose/nerdtree'
+" Plugin 'netrw.vim'
 
 " Replace taglist with tagbar
-" Bundle 'taglist.vim'
-Bundle 'tagbar'
+" Plugin 'taglist.vim'
+Plugin 'tagbar'
 
-Bundle 'klen/python-mode'
-Bundle 'StanAngeloff/php.vim'
-Bundle 'phpcomplete.vim'
-Bundle 'mileszs/ack.vim'
-Bundle 'JulesWang/css.vim'
-Bundle 'L9'
+Plugin 'klen/python-mode'
+Plugin 'StanAngeloff/php.vim'
+Plugin 'phpcomplete.vim'
+Plugin 'mileszs/ack.vim'
+Plugin 'JulesWang/css.vim'
+Plugin 'L9'
 
 "Fuzzy Finding plugins
-Bundle 'FuzzyFinder'
-Bundle 'kien/ctrlp.vim' 
+Plugin 'FuzzyFinder'
+Plugin 'kien/ctrlp.vim' 
 
-Bundle 'Lokaltog/powerline', {'rtp':'powerline/bindings/vim/'}
-Bundle 'tpope/vim-surround'
-Bundle 'Lokaltog/vim-easymotion'
-Bundle 'msanders/snipmate.vim'
-Bundle 'scrooloose/syntastic'
-Bundle 'phtml.vim'
-Bundle 'tomtom/tcomment_vim'
-" Bundle 'tristen/vim-sparkup'
-Bundle 'kchmck/vim-coffee-script'
-Bundle 'brookhong/DBGPavim'
-" Bundle 'ervandew/supertab'
+Plugin 'Lokaltog/powerline', {'rtp':'powerline/bindings/vim/'}
+Plugin 'tpope/vim-surround'
+Plugin 'Lokaltog/vim-easymotion'
+Plugin 'msanders/snipmate.vim'
+Plugin 'scrooloose/syntastic'
+Plugin 'phtml.vim'
+Plugin 'tomtom/tcomment_vim'
+" Plugin 'tristen/vim-sparkup'
+Plugin 'kchmck/vim-coffee-script'
+Plugin 'brookhong/DBGPavim'
+" Plugin 'ervandew/supertab'
 
-Bundle 'davidhalter/jedi-vim'
-" Bundle 'Valloric/YouCompleteMe'
+Plugin 'davidhalter/jedi-vim'
+" Plugin 'Valloric/YouCompleteMe'
 
-Bundle 'django.vim'
-Bundle 'jistr/vim-nerdtree-tabs'
-Bundle 'groenewege/vim-less'
-Bundle 'mattn/emmet-vim'
+Plugin 'django.vim'
+Plugin 'jistr/vim-nerdtree-tabs'
+Plugin 'groenewege/vim-less'
+Plugin 'mattn/emmet-vim'
 
 " Dependency plugin for easytags
-Bundle 'xolox/vim-misc' 
-Bundle 'xolox/vim-easytags'
+Plugin 'xolox/vim-misc' 
+Plugin 'xolox/vim-easytags'
 
 " For scala
-Bundle 'derekwyatt/vim-scala'
-
-filetype plugin indent on
+Plugin 'derekwyatt/vim-scala'
+Plugin 'eshion/vim-sync'
+" All of your Plugins must be added before the following line
+call vundle#end()            " required
+filetype plugin indent on    " required
 
 " ~ files is anonying
 set nobackup
@@ -80,6 +81,7 @@ autocmd FileType html setlocal shiftwidth=2 tabstop=2
 map <C-n> :NERDTreeToggle<CR>
 " ignore .pyc files in NERDTree
 let NERDTreeIgnore = ['\.pyc$']
+" Open NERDTree automatically
 
 " Set shortcuts to FuzzyFinder
 nnoremap <Leader>f :FufFile <CR>
@@ -128,10 +130,10 @@ let Tlist_Use_Horiz_Window = 1
 " let g:easytags_dynamic_files = 2
 
 " Set font
-if has('gui_running')
-  set guifont=Inconsolata:h12
-  set gfw=KaiTi:h11 
-endif
+" if has('gui_running')
+"  set guifont=Inconsolata:h12
+"  set gfw=KaiTi:h11 
+" endif
 
 " Windows unreadable code problem
 source $VIMRUNTIME/delmenu.vim
