@@ -55,7 +55,7 @@ Plugin 'xolox/vim-easytags'
 
 " For scala
 Plugin 'derekwyatt/vim-scala'
-Plugin 'eshion/vim-sync'
+Plugin 'https://github.com/Carolusian/vim-hsftp.git'
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
