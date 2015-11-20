@@ -97,7 +97,11 @@ set langmenu=en   "set menu's language of gvim. no spaces beside '='
 
 set encoding=utf-8
 set termencoding=utf-8
-setglobal fileencoding=utf-8
+" setglobal fileencoding=utf-8
+set fileencodings=ucs-bom,utf-8,cp936,gb18030,big5,euc-jp,euc-kr,latin1
+
+" Set to auto read when a file is changed from the outside
+set autoread
 
 " Powerline setup
 set laststatus=2
@@ -132,7 +136,8 @@ let Tlist_Use_Horiz_Window = 1
 " Set font
 if has('gui_running')
   set guifont=monaco:h12
-  " set gfw=KaiTi:h11 
+   " set gfw=KaiTi:h11 
+  set gfw=Adobe\ Ming\ Std\ L:h12
 endif
 
 " Windows unreadable code problem
