@@ -136,8 +136,8 @@ let Tlist_Use_Horiz_Window = 1
 " Set font
 if has('gui_running')
   set guifont=monaco:h12
-   " set gfw=KaiTi:h11 
-  set gfw=Adobe\ Ming\ Std\ L:h12
+  " set gfw=KaiTi:h11 
+  " set gfw=Adobe\ Ming\ Std\ L:h12
 endif
 
 " Windows unreadable code problem
