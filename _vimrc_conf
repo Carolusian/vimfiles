@@ -65,7 +65,7 @@ set nobackup
 
 " use molokai as the default color scheme
 " colorscheme candy
-colorscheme smyck
+colorscheme desert
 
 set number "Display line number
 set expandtab "replace tab into spaces
