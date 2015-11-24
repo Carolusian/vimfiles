@@ -29,7 +29,7 @@ Plugin 'L9'
 Plugin 'FuzzyFinder'
 Plugin 'kien/ctrlp.vim' 
 
-Plugin 'Lokaltog/powerline', {'rtp':'powerline/bindings/vim/'}
+" Plugin 'Lokaltog/powerline', {'rtp':'powerline/bindings/vim/'}
 Plugin 'tpope/vim-surround'
 Plugin 'Lokaltog/vim-easymotion'
 Plugin 'msanders/snipmate.vim'
